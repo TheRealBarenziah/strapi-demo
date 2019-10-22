@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "contentstjogame",
+  "info": {
+    "name": "contentstjogame",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentStJoGame",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentStJoGame"
+      ]
+    },
+    "scoring": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "onGameEnd": {
+      "collection": "contentaction",
+      "via": "contentstjogame_ongameend"
+    },
+    "endgametexte": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}

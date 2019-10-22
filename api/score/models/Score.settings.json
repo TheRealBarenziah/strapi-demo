@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "scores",
+  "info": {
+    "name": "score",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Score": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

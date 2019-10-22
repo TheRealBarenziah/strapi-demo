@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contentstartbuttons",
+      "handler": "Contentstartbutton.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentstartbuttons/count",
+      "handler": "Contentstartbutton.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentstartbuttons/:id",
+      "handler": "Contentstartbutton.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contentstartbuttons",
+      "handler": "Contentstartbutton.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contentstartbuttons/:id",
+      "handler": "Contentstartbutton.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contentstartbuttons/:id",
+      "handler": "Contentstartbutton.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

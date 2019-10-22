@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "contenttexts",
+  "info": {
+    "name": "contenttext",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "prefab": {
+      "default": "ContentText",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentText"
+      ]
+    },
+    "fontsize": {
+      "default": "",
+      "type": "float"
+    },
+    "isStatic": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "time": {
+      "default": "",
+      "type": "float"
+    },
+    "texte": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}

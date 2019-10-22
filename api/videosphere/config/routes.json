@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/videospheres",
+      "handler": "Videosphere.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/videospheres/count",
+      "handler": "Videosphere.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/videospheres/:id",
+      "handler": "Videosphere.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/videospheres",
+      "handler": "Videosphere.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/videospheres/:id",
+      "handler": "Videosphere.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/videospheres/:id",
+      "handler": "Videosphere.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

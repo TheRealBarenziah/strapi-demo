@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contentphotocatches",
+      "handler": "Contentphotocatch.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentphotocatches/count",
+      "handler": "Contentphotocatch.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentphotocatches/:id",
+      "handler": "Contentphotocatch.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contentphotocatches",
+      "handler": "Contentphotocatch.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contentphotocatches/:id",
+      "handler": "Contentphotocatch.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contentphotocatches/:id",
+      "handler": "Contentphotocatch.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

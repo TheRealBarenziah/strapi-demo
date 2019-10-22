@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contenttutos",
+      "handler": "Contenttuto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenttutos/count",
+      "handler": "Contenttuto.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenttutos/:id",
+      "handler": "Contenttuto.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contenttutos",
+      "handler": "Contenttuto.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contenttutos/:id",
+      "handler": "Contenttuto.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contenttutos/:id",
+      "handler": "Contenttuto.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "connection": "default",
+  "collectionName": "content",
+  "info": {
+    "name": "content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Type": {
+      "default": "ContentEmpty",
+      "type": "enumeration",
+      "enum": [
+        "ContentEmpty",
+        "ContentButton",
+        "ContentVideo",
+        "ContentScene",
+        "ContentThumbnail",
+        "ContentHotspot",
+        "ContentOnBoarding",
+        "ContentMenuCurved",
+        "ContentText",
+        "ContentAudio",
+        "ContentStartButton",
+        "ContentLookAround",
+        "ContentStJoGame",
+        "ContentHotspotStJoGame",
+        "ContentHotspotMouvant",
+        "ContentPhotoCatch",
+        "ContentTuto",
+        "ContentBlend"
+      ],
+      "required": true
+    },
+    "ContentId": {
+      "default": "",
+      "type": "integer"
+    },
+    "contentscene": {
+      "model": "contentscene",
+      "via": "contents"
+    },
+    "position_x": {
+      "default": 0,
+      "type": "float"
+    },
+    "position_y": {
+      "default": 0,
+      "type": "float"
+    },
+    "position_z": {
+      "default": 0,
+      "type": "float"
+    },
+    "rotation_x": {
+      "default": 0,
+      "type": "float"
+    },
+    "rotation_y": {
+      "default": 0,
+      "type": "float"
+    },
+    "rotation_z": {
+      "default": 0,
+      "type": "float"
+    },
+    "scale_x": {
+      "default": 0,
+      "type": "float"
+    },
+    "scale_y": {
+      "default": 0,
+      "type": "float"
+    },
+    "scale_z": {
+      "default": 0,
+      "type": "float"
+    },
+    "parent": {
+      "model": "content"
+    },
+    "-": {
+      "model": "content"
+    }
+  }
+}

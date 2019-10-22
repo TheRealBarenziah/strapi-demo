@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contentaudios",
+      "handler": "Contentaudio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentaudios/count",
+      "handler": "Contentaudio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentaudios/:id",
+      "handler": "Contentaudio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contentaudios",
+      "handler": "Contentaudio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contentaudios/:id",
+      "handler": "Contentaudio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contentaudios/:id",
+      "handler": "Contentaudio.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

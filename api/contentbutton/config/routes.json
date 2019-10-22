@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contentbuttons",
+      "handler": "Contentbutton.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentbuttons/count",
+      "handler": "Contentbutton.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentbuttons/:id",
+      "handler": "Contentbutton.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contentbuttons",
+      "handler": "Contentbutton.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contentbuttons/:id",
+      "handler": "Contentbutton.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contentbuttons/:id",
+      "handler": "Contentbutton.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

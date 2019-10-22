@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "contentblends",
+  "info": {
+    "name": "contentblend",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentBlend",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentBlend"
+      ]
+    },
+    "video1": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "video2": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "onContinue": {
+      "collection": "contentaction",
+      "via": "contentblend_oncontinue"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "buttons",
+  "info": {
+    "name": "button",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "prefab": {
+      "default": "wixarButtonPlay",
+      "type": "enumeration",
+      "enum": [
+        "wixarButtonPlay"
+      ],
+      "required": true
+    },
+    "animationtimer": {
+      "default": "",
+      "type": "float"
+    },
+    "animationsizex": {
+      "default": "",
+      "type": "float"
+    },
+    "animationsizey": {
+      "default": "",
+      "type": "float"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "thumbnail": {
+      "collection": "thumbnail",
+      "via": "buttons"
+    }
+  }
+}

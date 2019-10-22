@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "contentphotocatches",
+  "info": {
+    "name": "contentphotocatch",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentPhotoCatch",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentPhotoCatch"
+      ]
+    },
+    "positionInfo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "text": {
+      "default": "",
+      "type": "text"
+    },
+    "nexttext": {
+      "default": "",
+      "type": "text"
+    },
+    "OnDeactivate": {
+      "collection": "contentaction",
+      "via": "contentphotocatch_ondeactivate"
+    }
+  }
+}

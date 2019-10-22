@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "music",
+  "info": {
+    "name": "music",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "prefab": {
+      "default": "WixarAudioManager",
+      "type": "enumeration",
+      "enum": [
+        "WixarAudioManager"
+      ],
+      "required": true
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "mainmusic": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

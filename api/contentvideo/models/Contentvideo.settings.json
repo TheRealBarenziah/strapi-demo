@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "contentvideo",
+  "info": {
+    "name": "contentvideo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Prefab": {
+      "default": "",
+      "type": "string"
+    },
+    "OnVideoEnd": {
+      "collection": "contentaction",
+      "via": "contentvideo"
+    },
+    "OnActivate": {
+      "collection": "contentaction",
+      "via": "contentvideo_OnActivate"
+    },
+    "OnDeactivate": {
+      "collection": "contentaction",
+      "via": "contentvideo_OnDeactivate"
+    },
+    "project": {
+      "model": "project",
+      "via": "contentvideos"
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

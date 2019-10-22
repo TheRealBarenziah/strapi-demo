@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/namesiftms",
+      "handler": "Namesiftm.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/namesiftms/count",
+      "handler": "Namesiftm.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/namesiftms/:id",
+      "handler": "Namesiftm.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/namesiftms",
+      "handler": "Namesiftm.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/namesiftms/:id",
+      "handler": "Namesiftm.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/namesiftms/:id",
+      "handler": "Namesiftm.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

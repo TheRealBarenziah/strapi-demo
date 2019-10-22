@@ -1,0 +1,59 @@
+{
+  "connection": "default",
+  "collectionName": "contenthotspotmouvants",
+  "info": {
+    "name": "contenthotspotmouvant",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "enum": [
+        "ContentHotspotMouvant"
+      ],
+      "default": "ContentHotspotMouvant",
+      "type": "enumeration",
+      "required": true
+    },
+    "fontSize": {
+      "default": "",
+      "type": "float"
+    },
+    "animated": {
+      "default": true,
+      "type": "boolean"
+    },
+    "positionInfo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "needimage": {
+      "default": false,
+      "type": "boolean"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "texte": {
+      "default": "",
+      "type": "text"
+    },
+    "color": {
+      "default": "#FFFFFF",
+      "type": "text"
+    }
+  }
+}

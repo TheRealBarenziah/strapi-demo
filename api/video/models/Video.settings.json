@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "videos",
+  "info": {
+    "name": "video",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "timeevents": {
+      "collection": "timeevent",
+      "via": "video"
+    },
+    "type": {
+      "default": "Skybox",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Skybox",
+        "2D"
+      ]
+    }
+  }
+}

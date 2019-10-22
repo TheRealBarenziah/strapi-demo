@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "contenthotspots",
+  "info": {
+    "name": "contenthotspot",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentHotspot",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentHotspot"
+      ]
+    },
+    "text": {
+      "default": "",
+      "type": "string"
+    },
+    "fontsize": {
+      "default": "",
+      "type": "float"
+    },
+    "project": {
+      "model": "project",
+      "via": "contenthotspots"
+    },
+    "animated": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "color": {
+      "default": "#FFFFFF",
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contenthotspotstjogames",
+      "handler": "Contenthotspotstjogame.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenthotspotstjogames/count",
+      "handler": "Contenthotspotstjogame.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenthotspotstjogames/:id",
+      "handler": "Contenthotspotstjogame.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contenthotspotstjogames",
+      "handler": "Contenthotspotstjogame.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contenthotspotstjogames/:id",
+      "handler": "Contenthotspotstjogame.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contenthotspotstjogames/:id",
+      "handler": "Contenthotspotstjogame.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

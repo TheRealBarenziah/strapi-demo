@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "menutitles",
+  "info": {
+    "name": "menutitle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "text": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "MenuTitle",
+      "type": "enumeration",
+      "enum": [
+        "MenuTitle"
+      ],
+      "required": true
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "logo": {
+      "default": "La_Martinique_Elle_Vous_M_Ligne_Horizontale_W@2x",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "La_Martinique_Elle_Vous_M_Ligne_Horizontale_W@2x"
+      ]
+    }
+  }
+}

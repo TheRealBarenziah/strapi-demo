@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "menuimage360S",
+  "info": {
+    "name": "menuimage360",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "prefab": {
+      "default": "MenuImage360Controller",
+      "type": "enumeration",
+      "enum": [
+        "MenuImage360Controller"
+      ],
+      "required": true
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "image360": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

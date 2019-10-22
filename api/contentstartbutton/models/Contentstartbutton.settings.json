@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "contentstartbuttons",
+  "info": {
+    "name": "contentstartbutton",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentStartButton",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentStartButton"
+      ]
+    },
+    "onFilled": {
+      "collection": "contentaction",
+      "via": "contentstartbutton_onfilled"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "connection": "default",
+  "collectionName": "hotspotsgames",
+  "info": {
+    "name": "hotspotsgame",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "HotspotsGame",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "HotspotsGame"
+      ]
+    },
+    "animated": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "type": {
+      "default": "Correct",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Correct",
+        "Incorrect"
+      ]
+    },
+    "timeevents": {
+      "collection": "timeevent",
+      "via": "hotspotsgame"
+    },
+    "positionX": {
+      "default": 0,
+      "type": "float",
+      "required": true
+    },
+    "positionY": {
+      "default": 0,
+      "type": "float",
+      "required": true
+    },
+    "positionZ": {
+      "default": 0,
+      "type": "float",
+      "required": true
+    }
+  }
+}

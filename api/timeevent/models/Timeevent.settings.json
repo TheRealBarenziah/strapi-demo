@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "timeevents",
+  "info": {
+    "name": "timeevent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "timecode": {
+      "default": "",
+      "type": "float"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "video": {
+      "model": "video",
+      "via": "timeevents"
+    },
+    "hotspotsgame": {
+      "collection": "hotspotsgame",
+      "dominant": true,
+      "via": "timeevents"
+    }
+  }
+}

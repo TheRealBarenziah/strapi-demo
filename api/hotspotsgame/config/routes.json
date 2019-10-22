@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hotspotsgames",
+      "handler": "Hotspotsgame.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotspotsgames/count",
+      "handler": "Hotspotsgame.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotspotsgames/:id",
+      "handler": "Hotspotsgame.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hotspotsgames",
+      "handler": "Hotspotsgame.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hotspotsgames/:id",
+      "handler": "Hotspotsgame.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hotspotsgames/:id",
+      "handler": "Hotspotsgame.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

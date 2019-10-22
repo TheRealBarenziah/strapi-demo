@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contenthotspots",
+      "handler": "Contenthotspot.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenthotspots/count",
+      "handler": "Contenthotspot.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenthotspots/:id",
+      "handler": "Contenthotspot.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contenthotspots",
+      "handler": "Contenthotspot.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contenthotspots/:id",
+      "handler": "Contenthotspot.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contenthotspots/:id",
+      "handler": "Contenthotspot.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

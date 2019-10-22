@@ -1,0 +1,74 @@
+{
+  "connection": "default",
+  "collectionName": "hotspots",
+  "info": {
+    "name": "hotspot",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "HotspotsRollOver",
+      "type": "enumeration",
+      "enum": [
+        "HotspotsRollOver"
+      ],
+      "required": true
+    },
+    "text": {
+      "default": "",
+      "type": "string"
+    },
+    "displayduration": {
+      "default": "",
+      "type": "float"
+    },
+    "fadeduration": {
+      "default": "",
+      "type": "float"
+    },
+    "positionx": {
+      "default": "",
+      "type": "float"
+    },
+    "positiony": {
+      "default": "",
+      "type": "float"
+    },
+    "positionz": {
+      "default": "",
+      "type": "float"
+    },
+    "animated": {
+      "default": false,
+      "type": "boolean"
+    },
+    "animationduration": {
+      "default": "",
+      "type": "float"
+    },
+    "template": {
+      "default": "Martinique",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Martinique",
+        "SNCF"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "contentlookarounds",
+  "info": {
+    "name": "contentlookaround",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentLookAround",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentLookAround"
+      ]
+    },
+    "timer": {
+      "default": "",
+      "type": "float"
+    }
+  }
+}

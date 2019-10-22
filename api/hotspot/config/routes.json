@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hotspots",
+      "handler": "Hotspot.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotspots/count",
+      "handler": "Hotspot.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hotspots/:id",
+      "handler": "Hotspot.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hotspots",
+      "handler": "Hotspot.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hotspots/:id",
+      "handler": "Hotspot.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hotspots/:id",
+      "handler": "Hotspot.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "connection": "default",
+  "collectionName": "contentscene",
+  "info": {
+    "name": "contentscene",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "SceneType": {
+      "default": "Empty",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Empty",
+        "Video360",
+        "Image360"
+      ]
+    },
+    "Media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "contents": {
+      "collection": "content",
+      "via": "contentscene"
+    },
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "project": {
+      "model": "project",
+      "via": "Scenes"
+    },
+    "OnSceneLoad": {
+      "collection": "contentaction",
+      "via": "contentscene"
+    },
+    "IsMain": {
+      "default": false,
+      "unique": true,
+      "type": "boolean",
+      "required": true
+    },
+    "Prefab": {
+      "default": "ContentScenePrefab",
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "ContentScenePrefab"
+      ],
+      "required": true
+    },
+    "OnVideoEnd": {
+      "collection": "contentaction",
+      "via": "contentscene_VideoEnd"
+    },
+    "videocontrollers": {
+      "default": false,
+      "type": "boolean"
+    },
+    "islooping": {
+      "default": false,
+      "type": "boolean"
+    },
+    "retourmenu": {
+      "default": false,
+      "type": "boolean"
+    },
+    "OnDeactivate": {
+      "collection": "contentaction",
+      "via": "contentscene_ondeactivate"
+    },
+    "isStatic": {
+      "default": true,
+      "type": "boolean"
+    },
+    "timer": {
+      "default": "",
+      "type": "float"
+    }
+  }
+}

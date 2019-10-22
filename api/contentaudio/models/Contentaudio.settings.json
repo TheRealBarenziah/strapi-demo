@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "contentaudios",
+  "info": {
+    "name": "contentaudio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentAudio",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentAudio"
+      ]
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "isLoop": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "OnAudioEnd": {
+      "collection": "contentaction",
+      "via": "contentaudio_onaudioend"
+    }
+  }
+}

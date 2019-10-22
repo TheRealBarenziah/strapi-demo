@@ -1,0 +1,87 @@
+{
+  "connection": "default",
+  "collectionName": "thumbnails",
+  "info": {
+    "name": "thumbnail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "UIVignette",
+      "type": "enumeration",
+      "enum": [
+        "UIVignette"
+      ],
+      "required": true
+    },
+    "animationspeed": {
+      "default": "",
+      "type": "float"
+    },
+    "animationsizex": {
+      "default": "",
+      "type": "float"
+    },
+    "animationsizey": {
+      "default": "",
+      "type": "float"
+    },
+    "imagetext": {
+      "default": "",
+      "type": "string"
+    },
+    "gazedtext": {
+      "default": "",
+      "type": "string"
+    },
+    "fontsize": {
+      "default": "",
+      "type": "integer"
+    },
+    "rendertextureprefab": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "RTXSurvol",
+        "RTXPlongee",
+        "RTXVitesse"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "music": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "buttons": {
+      "collection": "button",
+      "via": "thumbnail",
+      "dominant": true
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "thumbnail"
+    }
+  }
+}

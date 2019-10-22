@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "videospheres",
+  "info": {
+    "name": "videosphere",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "VideoSphere",
+      "type": "enumeration",
+      "enum": [
+        "VideoSphere"
+      ],
+      "required": true
+    },
+    "content": {
+      "default": "VideoSphereContent",
+      "type": "enumeration",
+      "enum": [
+        "VideoSphereContent"
+      ],
+      "required": true
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

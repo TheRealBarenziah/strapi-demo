@@ -1,0 +1,64 @@
+{
+  "connection": "default",
+  "collectionName": "contentthumbnails",
+  "info": {
+    "name": "contentthumbnail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "Thumbnail",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "None",
+        "Thumbnail"
+      ]
+    },
+    "OnGazeEnter": {
+      "collection": "contentaction",
+      "via": "contentthumbnail_gazeenter"
+    },
+    "OnGazeExit": {
+      "collection": "contentaction",
+      "via": "contentthumbnail_gazeexit"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "fontsize": {
+      "default": "",
+      "type": "float"
+    },
+    "project": {
+      "model": "project",
+      "via": "contentthumbnails"
+    },
+    "texte": {
+      "default": "",
+      "type": "text"
+    },
+    "gazedtexte": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}

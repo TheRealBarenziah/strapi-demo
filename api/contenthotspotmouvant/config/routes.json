@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contenthotspotmouvants",
+      "handler": "Contenthotspotmouvant.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenthotspotmouvants/count",
+      "handler": "Contenthotspotmouvant.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenthotspotmouvants/:id",
+      "handler": "Contenthotspotmouvant.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contenthotspotmouvants",
+      "handler": "Contenthotspotmouvant.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contenthotspotmouvants/:id",
+      "handler": "Contenthotspotmouvant.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contenthotspotmouvants/:id",
+      "handler": "Contenthotspotmouvant.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "contenthotspotstjogame",
+  "info": {
+    "name": "contenthotspotstjogame",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "type": {
+      "default": "True",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "True",
+        "False"
+      ]
+    },
+    "prefab": {
+      "default": "ContentHotspotStJoGame",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentHotspotStJoGame"
+      ]
+    },
+    "timecode": {
+      "default": "",
+      "type": "float"
+    },
+    "direction": {
+      "default": "Forward",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Forward",
+        "Left",
+        "Right"
+      ]
+    }
+  }
+}

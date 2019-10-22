@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/timeevents",
+      "handler": "Timeevent.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timeevents/count",
+      "handler": "Timeevent.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/timeevents/:id",
+      "handler": "Timeevent.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/timeevents",
+      "handler": "Timeevent.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/timeevents/:id",
+      "handler": "Timeevent.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/timeevents/:id",
+      "handler": "Timeevent.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

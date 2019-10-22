@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contentlookarounds",
+      "handler": "Contentlookaround.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentlookarounds/count",
+      "handler": "Contentlookaround.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contentlookarounds/:id",
+      "handler": "Contentlookaround.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contentlookarounds",
+      "handler": "Contentlookaround.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contentlookarounds/:id",
+      "handler": "Contentlookaround.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contentlookarounds/:id",
+      "handler": "Contentlookaround.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

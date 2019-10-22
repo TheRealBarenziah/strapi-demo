@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "testbuttons",
+  "info": {
+    "name": "contentbutton",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "onActivate": {
+      "collection": "contentaction",
+      "via": "contentbutton_activate"
+    },
+    "onDeactivate": {
+      "collection": "contentaction",
+      "via": "contentbutton_deactivate"
+    },
+    "prefab": {
+      "default": "",
+      "type": "string"
+    },
+    "project": {
+      "model": "project",
+      "via": "contentbuttons"
+    },
+    "onFilled": {
+      "collection": "contentaction",
+      "via": "contentbutton_onFilled"
+    },
+    "color": {
+      "default": "#FFFFFF",
+      "type": "text"
+    }
+  }
+}

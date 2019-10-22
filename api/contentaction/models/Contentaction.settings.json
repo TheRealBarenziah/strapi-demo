@@ -1,0 +1,126 @@
+{
+  "connection": "default",
+  "collectionName": "contentactions",
+  "info": {
+    "name": "contentaction",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "ContentButton",
+        "ContentVideo",
+        "ContentThumbnail",
+        "ContentScene",
+        "ContentHotspot",
+        "ContentEmpty",
+        "ContentMenuCurved",
+        "ContentOnBoarding",
+        "ContentText",
+        "ContentAudio",
+        "ContentStartButton",
+        "ContentLookAround",
+        "ContentStJoGame",
+        "ContentHotspotMouvant",
+        "ContentPhotoCatch",
+        "ContentTuto",
+        "ContentBlend"
+      ]
+    },
+    "ContentID": {
+      "default": "",
+      "type": "integer"
+    },
+    "action": {
+      "model": "action"
+    },
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "contentbutton_activate": {
+      "model": "contentbutton",
+      "via": "onActivate"
+    },
+    "contentbutton_deactivate": {
+      "model": "contentbutton",
+      "via": "onDeactivate"
+    },
+    "contentvideo_OnActivate": {
+      "model": "contentvideo",
+      "via": "OnActivate"
+    },
+    "contentvideo_OnDeactivate": {
+      "model": "contentvideo",
+      "via": "OnDeactivate"
+    },
+    "contentvideo": {
+      "model": "contentvideo",
+      "via": "OnVideoEnd"
+    },
+    "contentscene": {
+      "model": "contentscene",
+      "via": "OnSceneLoad"
+    },
+    "contentthumbnail_gazeenter": {
+      "model": "contentthumbnail",
+      "via": "OnGazeEnter"
+    },
+    "contentthumbnail_gazeexit": {
+      "model": "contentthumbnail",
+      "via": "OnGazeExit"
+    },
+    "contentbutton_onFilled": {
+      "model": "contentbutton",
+      "via": "onFilled"
+    },
+    "contentscene_VideoEnd": {
+      "model": "contentscene",
+      "via": "OnVideoEnd"
+    },
+    "contentonboarding_ondeactivate": {
+      "model": "contentonboarding",
+      "via": "OnDeactivate"
+    },
+    "contentaudio_onaudioend": {
+      "model": "contentaudio",
+      "via": "OnAudioEnd"
+    },
+    "contentonboarding_onactivate": {
+      "model": "contentonboarding",
+      "via": "OnActivate"
+    },
+    "contentstartbutton_onfilled": {
+      "model": "contentstartbutton",
+      "via": "onFilled"
+    },
+    "contentstjogame_ongameend": {
+      "model": "contentstjogame",
+      "via": "onGameEnd"
+    },
+    "contenttuto_ontutoend": {
+      "model": "contenttuto",
+      "via": "OnTutoEnd"
+    },
+    "contentscene_ondeactivate": {
+      "model": "contentscene",
+      "via": "OnDeactivate"
+    },
+    "contentphotocatch_ondeactivate": {
+      "model": "contentphotocatch",
+      "via": "OnDeactivate"
+    },
+    "contentblend_oncontinue": {
+      "model": "contentblend",
+      "via": "onContinue"
+    }
+  }
+}

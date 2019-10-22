@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "contentmenucurved",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentMenuCurved",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentMenuCurved"
+      ]
+    }
+  }
+}

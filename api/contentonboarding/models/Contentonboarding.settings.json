@@ -1,0 +1,57 @@
+{
+  "connection": "default",
+  "collectionName": "contentonboardings",
+  "info": {
+    "name": "contentonboarding",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "prefab": {
+      "default": "ContentOnBoarding",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContentOnBoarding"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "fontsize": {
+      "default": "",
+      "type": "float"
+    },
+    "OnDeactivate": {
+      "collection": "contentaction",
+      "via": "contentonboarding_ondeactivate"
+    },
+    "OnActivate": {
+      "collection": "contentaction",
+      "via": "contentonboarding_onactivate"
+    },
+    "isStatic": {
+      "default": true,
+      "type": "boolean"
+    },
+    "timer": {
+      "default": "",
+      "type": "float"
+    },
+    "texte": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}
